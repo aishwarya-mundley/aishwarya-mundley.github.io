@@ -1,4 +1,5 @@
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
 
@@ -17,7 +18,8 @@ interface BlogCardProps {
 
 export const BlogCard = ({ post }: BlogCardProps) => {
   return (
-    <Card className="group cursor-pointer transition-all duration-300 hover:shadow-card hover:shadow-glow/20 hover:-translate-y-1 bg-gradient-subtle border-border/50">
+    <Link to={`/blog/${post.id}`}>
+      <Card className="group cursor-pointer transition-all duration-300 hover:shadow-card hover:shadow-glow/20 hover:-translate-y-1 bg-gradient-subtle border-border/50">
       <CardHeader className="pb-3">
         <div className="flex items-center gap-4 text-sm text-muted-foreground mb-2">
           <div className="flex items-center gap-1">
@@ -53,5 +55,6 @@ export const BlogCard = ({ post }: BlogCardProps) => {
         </div>
       </CardContent>
     </Card>
+    </Link>
   );
 };
