@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -58,5 +60,148 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-size: 14px;
   }
+}
+
+/* Math rendering styles for dark theme */
+.katex {
+  color: hsl(var(--foreground));
+}
+
+/* Block/display math ($$...$$) - centered */
+.katex-display {
+  margin: 1.5em 0;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.katex-display > .katex {
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Inline math ($...$) - stays inline */
+.katex:not(.katex-display) {
+  display: inline;
+  vertical-align: middle;
+}
+
+/* Ensure proper spacing around math */
+.katex-display + .katex-display {
+  margin-top: 1em;
+}
+
+/* Responsive math */
+@media (max-width: 768px) {
+  .katex-display {
+    font-size: 0.9em;
+  }
+}
+
+/* Fallback for math that doesn't render */
+.katex-error {
+  color: #cc0000;
+  background-color: rgba(204, 0, 0, 0.1);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+/* Better math spacing and alignment */
+.katex .mord {
+  font-family: 'KaTeX_Main', 'Times New Roman', serif;
+}
+
+.katex .mbin {
+  margin: 0 0.2222em;
+}
+
+.katex .mrel {
+  margin: 0 0.2778em;
+}
+
+.katex .mop {
+  margin-left: 0.0833em;
+  margin-right: 0.0833em;
+}
+
+.katex .mpunct {
+  margin-left: 0.1667em;
+  margin-right: 0.1667em;
+}
+
+/* Markdown-it rendered content styling */
+.prose h1 {
+  @apply text-3xl font-bold mt-8 mb-4 text-foreground border-b border-border pb-2;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mt-6 mb-3 text-foreground;
+}
+
+.prose h3 {
+  @apply text-xl font-bold mt-4 mb-2 text-foreground;
+}
+
+.prose h4 {
+  @apply text-lg font-bold mt-3 mb-2 text-foreground;
+}
+
+.prose p {
+  @apply mb-4 text-foreground/90 leading-relaxed;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4 text-foreground/90 space-y-1;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4 text-foreground/90 space-y-1;
+}
+
+.prose li {
+  @apply text-foreground/90;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary/50 pl-4 italic text-foreground/80 my-4;
+}
+
+.prose table {
+  @apply min-w-full border border-border rounded-md overflow-x-auto my-4;
+}
+
+.prose thead {
+  @apply bg-secondary/20;
+}
+
+.prose th {
+  @apply px-4 py-2 text-left font-semibold text-foreground;
+}
+
+.prose td {
+  @apply px-4 py-2 text-foreground/90 border-b border-border;
+}
+
+.prose a {
+  @apply text-primary hover:text-primary/80 underline transition-colors;
+}
+
+.prose strong {
+  @apply font-bold text-foreground;
+}
+
+.prose em {
+  @apply italic text-foreground/90;
+}
+
+.prose code {
+  @apply bg-secondary/20 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-secondary/20 p-4 rounded-md font-mono text-sm my-4 border border-border/30 overflow-x-auto;
 }

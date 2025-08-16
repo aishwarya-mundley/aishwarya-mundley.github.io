@@ -12,7 +12,7 @@ export const Navbar = () => {
             to="/" 
             className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            Alex Johnson
+            aishwarya mundley
           </Link>
           
           <div className="flex items-center gap-6">
@@ -21,14 +21,14 @@ export const Navbar = () => {
               asChild
               className={location.pathname === "/" ? "bg-gradient-primary" : "hover:bg-secondary/50"}
             >
-              <Link to="/">Home</Link>
+              <Link to="/">home</Link>
             </Button>
             <Button
               variant={location.pathname === "/blogs" ? "default" : "ghost"}
               asChild
               className={location.pathname === "/blogs" ? "bg-gradient-primary" : "hover:bg-secondary/50"}
             >
-              <Link to="/blogs">Blog</Link>
+              <Link to="/blogs">blog</Link>
             </Button>
           </div>
         </div>
