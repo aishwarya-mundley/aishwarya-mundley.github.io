@@ -30,27 +30,6 @@ const Index = () => {
             <SocialLinks />
           </div>
 
-          {/* Featured Work/Stats */}
-          <div className="grid md:grid-cols-3 gap-6 animate-slide-up">
-            <Card className="bg-gradient-subtle border-border/50 hover:shadow-card transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">50+</div>
-                <div className="text-muted-foreground">Projects Completed</div>
-              </CardContent>
-            </Card>
-            <Card className="bg-gradient-subtle border-border/50 hover:shadow-card transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">3+</div>
-                <div className="text-muted-foreground">Years Experience</div>
-              </CardContent>
-            </Card>
-            <Card className="bg-gradient-subtle border-border/50 hover:shadow-card transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">25+</div>
-                <div className="text-muted-foreground">Blog Posts</div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </div>
