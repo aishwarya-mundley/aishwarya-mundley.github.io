@@ -1,8 +1,8 @@
-import { ArrowLeft, Search } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { BlogCard } from "@/components/BlogCard";
+import { Navbar } from "@/components/Navbar";
 
 const samplePosts = [
   {
@@ -58,20 +58,10 @@ const samplePosts = [
 const Blogs = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="mb-12">
-          <Button
-            variant="ghost"
-            asChild
-            className="mb-6 hover:bg-secondary/50 transition-colors"
-          >
-            <Link to="/" className="flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Profile
-            </Link>
-          </Button>
-          
+        <div className="mb-12">          
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent animate-fade-in">
               My Blog

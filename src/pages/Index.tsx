@@ -1,28 +1,15 @@
-import { ArrowRight, Download } from "lucide-react";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SocialLinks } from "@/components/SocialLinks";
-import profileAvatar from "@/assets/profile-avatar.jpg";
+import { Navbar } from "@/components/Navbar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Profile Image */}
-          <div className="mb-8 animate-fade-in">
-            <div className="relative w-32 h-32 mx-auto mb-6">
-              <img
-                src={profileAvatar}
-                alt="Profile"
-                className="w-full h-full rounded-full object-cover border-4 border-primary/20 shadow-glow animate-float"
-              />
-              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 hover:opacity-20 transition-opacity duration-300"></div>
-            </div>
-          </div>
-
           {/* Title and Intro */}
           <div className="mb-12 animate-slide-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
@@ -36,28 +23,6 @@ const Index = () => {
               Specializing in React, TypeScript, and modern web technologies. 
               Always learning, always building.
             </p>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up">
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
-            >
-              <Link to="/blogs" className="flex items-center gap-2">
-                View My Blog
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-border hover:bg-secondary/50 transition-all duration-300"
-            >
-              <Download className="h-5 w-5 mr-2" />
-              Download Resume
-            </Button>
           </div>
 
           {/* Social Links */}
