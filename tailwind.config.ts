@@ -19,9 +19,10 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'serif': ['"Times New Roman"', 'Times', 'serif'],
-				'sans': ['"Times New Roman"', 'Times', 'serif'],
-			},
+                'serif': ['"Times New Roman"', 'Times', 'serif'],
+                'mono': ["jetbrains mono", "fira code", "sf mono", "consolas", "monaco", "courier new", "monospace"],
+                'sans': ["inter", "-apple-system", "blinkmacsystemfont", "sans-serif"],
+            },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
