@@ -16,7 +16,7 @@ const Index = () => {
               aishwarya mundley
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8">
-              software engineer and interested in ml research
+              software engineer interested in ml research
               
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
