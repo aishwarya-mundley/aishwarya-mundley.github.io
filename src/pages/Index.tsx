@@ -16,7 +16,7 @@ const Index = () => {
               aishwarya mundley
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8">
-              software engineer and ml researcher
+              software engineer and interested in ml research
               
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -26,7 +26,7 @@ const Index = () => {
               - interested in math, ml, rl, and ai
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            - coding scratch implementations
+            - dissecting math, building intuitions, and coding implementations
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             - occasionally writing about experiments
