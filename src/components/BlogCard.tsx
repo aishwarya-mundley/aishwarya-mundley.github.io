@@ -10,6 +10,7 @@ interface BlogPost {
   date: string;
   readTime: string;
   tags: string[];
+  external_link?: string; // Optional for posts that link externally
 }
 
 interface BlogCardProps {
@@ -18,7 +19,7 @@ interface BlogCardProps {
 
 export const BlogCard = ({ post }: BlogCardProps) => {
   return (
-    <Link to={`/blog/${post.id}`}>
+    <Link to={post.external_link ? post.external_link : `/blog/${post.id}`}>
       <Card className="group cursor-pointer transition-all duration-300 hover:shadow-card hover:shadow-glow/20 hover:-translate-y-1 bg-gradient-subtle border-border/50">
       <CardHeader className="pb-3">
         <div className="flex items-center gap-4 text-sm text-muted-foreground mb-2">

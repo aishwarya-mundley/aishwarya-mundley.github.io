@@ -12,6 +12,15 @@ const samplePosts = [
     date: "16/08/25",
     readTime: "7 min read",
     tags: ["rl", "math", "ml"]
+  },
+  {
+    id: 2,
+    title: "trpo math notes",
+    excerpt: "notes on trpo math",
+    date: "18/08/25",
+    readTime: "10 min read",
+    tags: ["trpo", "math", "ml"],
+    external_link: "https://share.note.sx/g8vnoz06"
   }
 ];
 

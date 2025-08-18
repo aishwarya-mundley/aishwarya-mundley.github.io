@@ -12,6 +12,12 @@ const blogPosts = {
     date: "Aug 16, 2025",
     readTime: "7 min read",
     tags: ["rl", "math", "ml"]
+  },
+  2: {
+    title: "trpo math notes",
+    date: "Aug 18, 2025",
+    readTime: "10 min read",
+    tags: ["trpo", "math", "ml"]
   }
 };
 
