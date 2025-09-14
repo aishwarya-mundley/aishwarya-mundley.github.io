@@ -1,4 +1,4 @@
-import { Github, X, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
 
 const socialLinks = [
@@ -9,9 +9,9 @@ const socialLinks = [
     color: "hover:text-white"
   },
   {
-    name: "",
+    name: "Twitter",
     url: "https://x.com/aishwarya_2x21",
-    icon: X,
+    icon: Twitter,
     color: "hover:text-blue-400"
   },
   {
