@@ -1,28 +1,28 @@
-import { Github, Twitter, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Github, X, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
 
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com",
+    url: "https://github.com/aishwarya-mundley",
     icon: Github,
     color: "hover:text-white"
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com",
-    icon: Twitter,
+    name: "",
+    url: "https://x.com/aishwarya_2x21",
+    icon: X,
     color: "hover:text-blue-400"
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/aishwarya-mundley/",
     icon: Linkedin,
     color: "hover:text-blue-500"
   },
   {
     name: "Email",
-    url: "mailto:hello@example.com",
+    url: "mailto:aishwarya.mundley@gmail.com",
     icon: Mail,
     color: "hover:text-green-400"
   }
